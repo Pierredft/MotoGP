@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+
+nav{
+    margin-top: 1%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn{
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.size{
+    font-size: 1.5em;
+}
+.mr{
+    margin-right: 3%;
+}
+
+.circuitTable{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.block{
+    display: block;
+}
+
+.btn1{
+    background: none;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.flex{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.bgColor{
+background-color: #B7271A;
+margin: 0;
+}
+
+.color{
+    color: #fff;
+}
+
+.radius{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.circuitTable{
+    width: 40%;
+}
+
+.flex{
+    text-align: center;
+}
+
+.table, td, th, tr{
+    border: solid 1px black;
+    text-align: center;
+}
+
+td, th{
+    padding: 1% 2%;
+}
+
+.space{
+    width: 20%;
+}
+
+.img1{
+    width: 30%;
+}
+
+.ecuriesLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.table{
+    border-collapse: collapse;
+    display: none;
+}
+
+.test{
+    display: block;
+}

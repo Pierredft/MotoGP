@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../DiscutionEcuries/DiscutionEcuries.css">
+    <link rel="stylesheet" href="../PoliceEcriture/police.css">
+    <title>Discution Ecuries</title>
+</head>
+
+<body>
+    <nav>
+        <a class="btn color bgColor motoGP" href="#" role="button">Retour à l'accueil</a>
+    </nav>
+
+    <a class="btn color bgColor motoGP" href="#" role="button">Ajouter un sujet</a>
+    <a class="btn color bgColor motoGP" href="#" role="button">Ajouter</a>
+
+    <div class="circuitTable">
+        <div class="flex bgColor color radius block">
+            <h1 class="color mr motoGP">Classement écuries</h1>
+            <button type="button" id="btnCircuits" class="fa-solid fa-chevron-down size btn1"></button>
+        </div>
+                <table id="table" class="table">
+                    <thead>
+                        <tr>
+                            <th class="space">Classement</th>
+                            <th>Ecuries</th>
+                            <th class="space">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/PRAMAC_logo.png" class="img1" alt="pramac">
+                                <span class="test">Prima Pramac Racing</span>
+                            </div>
+                            </td>
+                            <td>526</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/MoonieVR46.png" class="img1" alt="Mooney">
+                                <span class="test">Mooney VR46 Racing Team</span>
+                            </div>
+                            </td>
+                            <td>441</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/Ducati.png" class="img1" alt="Ducati">
+                                <span class="test">Ducati Lenovo Team</span>
+                            </div>
+                            </td>
+                            <td>418</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/KTM.png" class="img1" alt="KTM">
+                                <span class="test">Red Bull KTM Factory Racing</span>
+                            </div>
+                            </td>
+                            <td>368</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/Aprilia.png" class="img1" alt="Aprilia">
+                                <span class="test">Aprilia Racing</span>
+                            </div>
+                            </td>
+                            <td>355</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/yamaha.webp" class="img1" alt="yamaha">
+                                <span class="test">Monster Energy Yamaha MotoGP</span>
+                            </div>
+                            </td>
+                            <td>213</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/gresini.png" class="img1" alt="Gresini">
+                                <span class="test">Gresini Racing</span>
+                            </div>
+                            </td>
+                            <td>201</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/RNF.png" class="img1" alt="RNF">
+                                <span class="test">RNF Racing</span>
+                            </div>
+                            </td>
+                            <td>119</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/honda-lcr.png" class="img1" alt="Honda">
+                                <span class="test">Honda LCR</span>
+                            </div>
+                            </td>
+                            <td>110</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/gasgas.png" class="img1" alt="GasGas">
+                                <span class="test">GasGas Tech3</span>
+                            </div>
+                            </td>
+                            <td>88</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td>
+                                <div class="ecuriesLogo">
+                                <img src="../DiscutionEcuries/LogoEcuries/repsol.png" class="img1" alt="RepsolHonda">
+                                <span class="test">Repsol Honda Team</span>
+                            </div>
+                            </td>
+                            <td>85</td>
+                        </tr>
+                        
+                    </tbody>
+        </div>
+    </div>
+    <script src="../DiscutionEcuries/DiscutionEcuries.js"></script>
+</body>
+
+</html>

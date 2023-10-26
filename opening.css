@@ -1,0 +1,76 @@
+body{
+    background-image: url(../EvalForum/img/motogp.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+video{
+    width: 800px;
+    margin-bottom: 5%;
+}
+
+.flexVideo{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: #fff;
+    background-color: rgb(183, 39, 26);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.flexBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'MotoGP1';
+}
+
+.color{
+    color: #fff;
+}
+
+.deco{
+    text-decoration: none;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:850px){
+    video{
+        width: 600px;
+        margin-bottom: 5%;
+    } 
+}
+
+@media only screen and (max-width:768px){
+    video{
+        width: 400px;
+        margin-bottom: 5%;
+    } 
+}
+
+@media only screen and (max-width:600px){
+    video{
+        width: 400px;
+        margin-bottom: 5%;
+    } 
+}

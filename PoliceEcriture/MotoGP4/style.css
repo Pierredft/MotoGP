@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MotoGP2';
+    src: local('MotoGP Bold'), local('MotoGP-Bold'),
+        url('MotoGPText-Bold.woff2') format('woff2'),
+        url('MotoGPText-Bold.woff') format('woff'),
+        url('MotoGPText-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .texteMotoGP{
+    font-family: 'MotoGP2';
+  }

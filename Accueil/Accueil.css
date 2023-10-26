@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(../Accueil/Img/GP23.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: rgb(182, 182, 182, 0.5);
+}
+
+.logoSize {
+    width: 10%;
+}
+
+.colorRed {
+    color: rgb(183, 39, 26);
+    font-size: 3vh;
+    margin-bottom: -2%;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.image{
+   width: 100%; 
+}
+
+.pilotes {
+    width: 18%;
+    text-align: center;
+    background-image: url(../Accueil/Img/ValeRossi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 1%;
+}
+
+.ecuries {
+    width: 18%;
+    text-align: center;
+    background-image: url(../Accueil/Img/GASGAS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 1%;
+}
+
+.circuits {
+    width: 18%;
+    text-align: center;
+    background-image: url(../Accueil/Img/Cicuit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 1%;
+}
+
+.stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.mb-4 {
+    margin-bottom: 4%;
+}
+
+.colorBlack {
+    color: black;
+}
+
+.colorwhite {
+    color: white;
+}
+
+.cssBtn {
+    background-color: rgb(183, 39, 26);
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+
+.size4vh {
+    font-size: 4vh;
+}
+
+.size3vh {
+    font-size: 3vh;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
