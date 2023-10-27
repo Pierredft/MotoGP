@@ -51,12 +51,17 @@ const checkEmail = () => {
         showError(CoEmailEl, 'le champ ne peut être vide');
     } else if (!isEmailValid(CoEmail)) {
         showError(CoEmailEl, "l'adresse mail ne être valide")
+    } else if (CoEmail !== mailRecup) {
+        showError(CoEmailEl, "l'adresse mail ne correspond pas avec celle renseigner lors de votre inscription")
     } else {
         showSuccess(CoEmailEl);
         valid = true;
     }
+    
     return valid;
 };
+
+
 
 //validation du mot de passe
 const checkPassword = () => {
@@ -66,6 +71,8 @@ const checkPassword = () => {
         showError(CoPasswordEl, 'le mot de passe ne peut être vide');
     } else if (!isPasswordSecure(CoPassword)) {
         showError(CoPasswordEl, 'le mot de passe doit avoir au moins 8 caractères, il doit comporter une minuscule, une majuscule, un chiffre et un caractère spécial parmis les suivants (#+-^[])');
+    } else if (CoPassword !== mdpRecup) {
+        showError(CoPasswordEl, 'le mot de passe ne correspond pas avec celui renseigner lors de votre inscription')
     } else {
         showSuccess(CoPasswordEl);
         valid = true
@@ -99,5 +106,35 @@ form.addEventListener('submit', function (e) {
         localStorage.setItem("CoPassword", CoMdpVal);
 });
 
-const mail = localStorage.getItem('mail');
-const motDePasse = localStorage.getItem('password');
+// recupération du mail et du mdp de register
+let mailRecup = localStorage.getItem('mail'); // recupération dans le localStorage
+let mdpRecup = localStorage.getItem('password'); // recupération dans le localStorage
+
+// date
+let dateCo = new Date();
+console.log(dateCo);
+let joursCo = dateCo.getDate();
+console.log(joursCo);
+let moisCo = dateCo.getMonth();
+let anneeCo = dateCo.getFullYear();
+console.log(anneeCo);
+console.log(moisCo);
+let heuresCo = dateCo.getHours();
+console.log(heuresCo);
+let minutesCo = dateCo.getMinutes();
+console.log(minutesCo);
+let secondesCo = dateCo.getSeconds();
+console.log(secondesCo);
+
+let formatHeure = heuresCo.toString().padStart(2,'0');
+let formatMinutes = minutesCo.toString().padStart(2,'0');
+let formatSecondes = secondesCo.toString().padStart(2,'0');
+let formatHHMMSS= formatHeure + ":" + formatMinutes + ":" + formatSecondes;
+
+let formatJours = joursCo.toString().padStart(2,'0');
+let formatMois = moisCo.toString().padStart(2, '0');
+let formatAnnee = anneeCo.toString().padStart(2, '0');
+let formatJJMMAAAA= formatJours + "/" + formatMois + "/" + formatAnnee;
+console.log(formatJJMMAAAA);
+
+localStorage.setItem("formatHHMMSS", formatHHMMSS);
