@@ -115,7 +115,7 @@ let dateCo = new Date();
 console.log(dateCo);
 let joursCo = dateCo.getDate();
 console.log(joursCo);
-let moisCo = dateCo.getMonth();
+let moisCo = dateCo.getMonth()+1;
 let anneeCo = dateCo.getFullYear();
 console.log(anneeCo);
 console.log(moisCo);
@@ -138,3 +138,4 @@ let formatJJMMAAAA= formatJours + "/" + formatMois + "/" + formatAnnee;
 console.log(formatJJMMAAAA);
 
 localStorage.setItem("formatHHMMSS", formatHHMMSS);
+localStorage.setItem("formatJJMMAAAA",formatJJMMAAAA)

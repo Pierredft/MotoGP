@@ -3,3 +3,6 @@ document.getElementById("prenom").innerHTML = prenomRecup; // affichage dans le 
 
 let heuresCoRecup = localStorage.getItem('formatHHMMSS');
 document.getElementById('affHeures').innerHTML = heuresCoRecup;
+
+let dateCoRecup = localStorage.getItem('formatJJMMAAAA');
+document.getElementById('affDate').innerHTML = dateCoRecup
