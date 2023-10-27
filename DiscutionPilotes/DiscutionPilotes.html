@@ -14,236 +14,271 @@
 
 <body>
     <nav>
-        <a class="btn color bgColor motoGP" href="#" role="button">Retour à l'accueil</a>
+        <a class="btn color bgColor motoGP" href="../Accueil/Accueil.html" role="button">Retour à l'accueil</a>
     </nav>
-    <input type="text" id="AjoutSujet" placeholder="Ajouter votre sujet">
-    <a class="btn color bgColor motoGP" id="btnAjout" role="button">Ajouter un sujet</a>
+    <div class="flexSujet">
+    <!-- tableau sujet -->
+    <table class="table2">
+        <thead>
+            <tr class="tr2">
+                <th class="th2">#</th>
+                <th class="th2">Sujet</th>
+                <th class="th2">Dernier commentaire</th>
+                <th class="th2">Auteur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr2">
+                <td class="td2">1</td>
+                <td class="td2">SujetTest</td>
+                <td class="td2"> testCom</td>
+                <td class="td2">testAuteur</td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2">1</td>
+                <td class="td2">SujetTest</td>
+                <td class="td2"> testCom</td>
+                <td class="td2">testAuteur</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- tableau sujet -->
+    <a class="btn btnSujet color bgColor motoGP sujet" id="btnAjout" role="button">Ajouter un sujet</a>
+</div>
 
-    <a class="btn color bgColor motoGP" href="#" role="button">Ajouter</a>
+<!-- ajout du sujet -->
+<div class="flexAjout">
+    <div class="#">
+        <input type="text" name="ajoutSujet" class="textZone" id="#" autocomplete="off">
+        <small></small>
+    </div>
+   <a class="btn color bgColor motoGP btnSujet" href="#" role="button">Ajouter</a>
+</div>
+<!-- ajout du sujet -->
 
     <div class="circuitTable">
         <div class="flex bgColor color radius block">
             <h1 class="color mr motoGP">Classement pilotes</h1>
             <button type="button" id="btnCircuits" class="fa-solid fa-chevron-down size btn1"></button>
         </div>
-        <table id="table" class="table">
+        <table id="table" class="table1">
             <thead>
                 <tr>
-                    <th class="space1">Pos</th>
-                    <th class="space">Pilote</th>
-                    <th class="space">Team</th>
-                    <th class="space">Points</th>
+                    <th class="space1 th1">Pos</th>
+                    <th class="space th1">Pilote</th>
+                    <th class="space th1">Team</th>
+                    <th class="space th1">Points</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="first">
-                    <td>1</td>
-                    <td class="motoGP"><i class="fa-solid fa-trophy" style="color:#fbff00"></i>1 F. Bagnaia</td>
-                    <td>Ducati Lenovo Team</td>
-                    <td>366</td>
+                <tr class="first tr1">
+                    <td class="td1">1</td>
+                    <td class="motoGP td1"><i class="fa-solid fa-trophy" style="color:#fbff00"></i>1 F. Bagnaia</td>
+                    <td class="td1">Ducati Lenovo Team</td>
+                    <td class="td1">366</td>
                 </tr>
 
-                <tr>
-                    <td>2</td>
-                    <td class="motoGP">89 J. Martin</td>
-                    <td>Prima Pramac Racing</td>
-                    <td>339</td>
+                <tr class="tr1">
+                    <td class="td1">2</td>
+                    <td class="motoGP td1">89 J. Martin</td>
+                    <td class="td1">Prima Pramac Racing</td>
+                    <td class="td1">339</td>
                 </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td class="motoGP">72 M. Bezzecchi</td>
-                    <td>Mooney VR46 Racing Team</td>
-                    <td>293</td>
+                <tr class="tr1">
+                    <td class="td1">3</td>
+                    <td class="motoGP td1">72 M. Bezzecchi</td>
+                    <td class="td1">Mooney VR46 Racing Team</td>
+                    <td class="td1">293</td>
                 </tr>
 
-                <tr>
-                    <td>4</td>
-                    <td class="motoGP">33 B. Binder</td>
-                    <td>Red Bull KTM Factory Racing</td>
-                    <td>224</td>
+                <tr class="tr1">
+                    <td class="td1">4</td>
+                    <td class="motoGP td1">33 B. Binder</td>
+                    <td class="td1">Red Bull KTM Factory Racing</td>
+                    <td class="td1">224</td>
                 </tr>
 
-                <tr>
-                    <td>5</td>
-                    <td class="motoGP">5 J. Zarco</td>
-                    <td>Prima Pramac Racing</td>
-                    <td>187</td>
+                <tr class="tr1">
+                    <td class="td1">5</td>
+                    <td class="motoGP td1">5 J. Zarco</td>
+                    <td class="td1">Prima Pramac Racing</td>
+                    <td class="td1">187</td>
                 </tr>
 
-                <tr>
-                    <td>6</td>
-                    <td class="motoGP">41 A. Espargaro</td>
-                    <td>Aprilia Racing</td>
-                    <td>185</td>
+                <tr class="tr1">
+                    <td class="td1">6</td>
+                    <td class="motoGP td1">41 A. Espargaro</td>
+                    <td class="td1">Aprilia Racing</td>
+                    <td class="td1">185</td>
                 </tr>
 
-                <tr>
-                    <td>7</td>
-                    <td class="motoGP">12 M .Viñales</td>
-                    <td>Aprilia Racing</td>
-                    <td>170</td>
+                <tr class="tr1">
+                    <td class="td1">7</td>
+                    <td class="motoGP td1">12 M .Viñales</td>
+                    <td class="td1">Aprilia Racing</td>
+                    <td class="td1">170</td>
                 </tr>
 
-                <tr>
-                    <td>8</td>
-                    <td class="motoGP">10 L. Marini</td>
-                    <td>Mooney VR46 Racing Team</td>
-                    <td>148</td>
+                <tr class="tr1">
+                    <td class="td1">8</td>
+                    <td class="motoGP td1">10 L. Marini</td>
+                    <td class="td1">Mooney VR46 Racing Team</td>
+                    <td class="td1">148</td>
                 </tr>
 
-                <tr>
-                    <td>9</td>
-                    <td class="motoGP">43 J. Miller</td>
-                    <td>Red Bull KTM Factory Racing</td>
-                    <td>144</td>
+                <tr class="tr1">
+                    <td class="td1">9</td>
+                    <td class="motoGP td1">43 J. Miller</td>
+                    <td class="td1">Red Bull KTM Factory Racing</td>
+                    <td class="td1">144</td>
                 </tr>
 
-                <tr>
-                    <td>10</td>
-                    <td class="motoGP">20 F. Quartararo</td>
-                    <td>Monster Energy Yamaha MotoGP</td>
-                    <td>134</td>
+                <tr class="tr1">
+                    <td class="td1">10</td>
+                    <td class="motoGPtd1">20 F. Quartararo</td>
+                    <td class="td1">Monster Energy Yamaha MotoGP</td>
+                    <td class="td1">134</td>
                 </tr>
 
-                <tr>
-                    <td>11</td>
-                    <td class="motoGP">73 A. Marquez</td>
-                    <td>Gresini Racing MotoGP</td>
-                    <td>115</td>
+                <tr class="tr1">
+                    <td class="td1">11</td>
+                    <td class="motoGP td1">73 A. Marquez</td>
+                    <td class="td1">Gresini Racing MotoGP</td>
+                    <td class="td1">115</td>
                 </tr>
 
-                <tr>
-                    <td>12</td>
-                    <td class="motoGP">49 F. Di Giannantonio</td>
-                    <td>Gresini Racing MotoGP</td>
-                    <td>86</td>
+                <tr class="tr1">
+                    <td class="td1">12</td>
+                    <td class="motoGP td1">49 F. Di Giannantonio</td>
+                    <td class="td1">Gresini Racing MotoGP</td>
+                    <td class="td1">86</td>
                 </tr>
 
-                <tr>
-                    <td>13</td>
-                    <td class="motoGP">21. F. Morbidelli</td>
-                    <td>Monster Energy Yamaha MotoGP</td>
-                    <td>79</td>
+                <tr class="tr1">
+                    <td class="td1">13</td>
+                    <td class="motoGP td1">21. F. Morbidelli</td>
+                    <td class="td1">Monster Energy Yamaha MotoGP</td>
+                    <td class="td1">79</td>
                 </tr>
 
-                <tr>
-                    <td>14</td>
-                    <td class="motoGP">88 M. Oliveira</td>
-                    <td>CryptoDATA RNF MotoGP Team</td>
-                    <td>76</td>
+                <tr class="tr1">
+                    <td class="td1">14</td>
+                    <td class="motoGP td1">88 M. Oliveira</td>
+                    <td class="td1">CryptoDATA RNF MotoGP Team</td>
+                    <td class="td1">76</td>
                 </tr>
 
-                <tr>
-                    <td>15</td>
-                    <td class="motoGP">37 A. Fernandez</td>
-                    <td>GASGAS Factory Racing Tech3</td>
-                    <td>67</td>
+                <tr class="tr1">
+                    <td class="td1">15</td>
+                    <td class="motoGP td1">37 A. Fernandez</td>
+                    <td class="td1">GASGAS Factory Racing Tech3</td>
+                    <td class="td1">67</td>
                 </tr>
 
-                <tr>
-                    <td>16</td>
-                    <td class="motoGP">93 M. Marquez</td>
-                    <td>Repsol Honda Team</td>
-                    <td>65</td>
+                <tr class="tr1">
+                    <td class="td1">16</td>
+                    <td class="motoGP td1">93 M. Marquez</td>
+                    <td class="td1">Repsol Honda Team</td>
+                    <td class="td1">65</td>
                 </tr>
 
-                <tr>
-                    <td>17</td>
-                    <td class="motoGP">42 A. Rins</td>
-                    <td>LCR Honda CASTROL</td>
-                    <td>54</td>
+                <tr class="tr1">
+                    <td class="td1">17</td>
+                    <td class="motoGP td1">42 A. Rins</td>
+                    <td class="td1">LCR Honda CASTROL</td>
+                    <td class="td1">54</td>
                 </tr>
 
-                <tr>
-                    <td>18</td>
-                    <td class="motoGP">30 T. Nakagami</td>
-                    <td>LCR Honda IDEMITSU</td>
-                    <td>50</td>
+                <tr class="tr1">
+                    <td class="td1">18</td>
+                    <td class="motoGP td1">30 T. Nakagami</td>
+                    <td class="td1">LCR Honda IDEMITSU</td>
+                    <td class="td1">50</td>
                 </tr>
 
-                <tr>
-                    <td>19</td>
-                    <td class="motoGP">23 E. Bastianini</td>
-                    <td>Ducati Lenovo Team</td>
-                    <td>42</td>
+                <tr class="tr1">
+                    <td class="td1">19</td>
+                    <td class="motoGP td1">23 E. Bastianini</td>
+                    <td class="td1">Ducati Lenovo Team</td>
+                    <td class="td1">42</td>
                 </tr>
 
-                <tr>
-                    <td>20</td>
-                    <td class="motoGP">25 R. Fernadez</td>
-                    <td>CryptoDATA RNF MotoGP Team</td>
-                    <td>39</td>
+                <tr class="tr1">
+                    <td class="td1">20</td>
+                    <td class="motoGP td1">25 R. Fernadez</td>
+                    <td class="td1">CryptoDATA RNF MotoGP Team</td>
+                    <td class="td1">39</td>
                 </tr>
 
-                <tr>
-                    <td>21</td>
-                    <td class="motoGP">26 D. Pedrosa</td>
-                    <td>Red Bull KTM Factory Racing</td>
-                    <td>32</td>
+                <tr class="td1">
+                    <td class="td1">21</td>
+                    <td class="motoGP td1">26 D. Pedrosa</td>
+                    <td class="td1">Red Bull KTM Factory Racing</td>
+                    <td class="td1">32</td>
                 </tr>
 
-                <tr>
-                    <td>22</td>
-                    <td class="motoGP">36 J. Mir</td>
-                    <td>Repsol Honda Team</td>
-                    <td>20</td>
+                <tr class="tr1">
+                    <td class="td1">22</td>
+                    <td class="motoGP td1">36 J. Mir</td>
+                    <td class="td1">Repsol Honda Team</td>
+                    <td class="td1">20</td>
                 </tr>
 
-                <tr>
-                    <td>23</td>
-                    <td class="motoGP">44 P. Espargaro</td>
-                    <td>GASGAS Factory Racing Tech3</td>
-                    <td>12</td>
+                <tr class="tr1">
+                    <td class="td1">23</td>
+                    <td class="motoGP td1">44 P. Espargaro</td>
+                    <td class="td1">GASGAS Factory Racing Tech3</td>
+                    <td class="td1">12</td>
                 </tr>
 
-                <tr>
-                    <td>24</td>
-                    <td class="motoGP">32 L. Savadori</td>
-                    <td>Aprilia Racing</td>
-                    <td>9</td>
+                <tr class="td1">
+                    <td class="td1">24</td>
+                    <td class="motoGP td1">32 L. Savadori</td>
+                    <td class="td1">Aprilia Racing</td>
+                    <td class="td1">9</td>
                 </tr>
 
-                <tr>
-                    <td>25</td>
-                    <td class="motoGP">94 J. Folger</td>
-                    <td>GASGAS Factory Racing Tech3</td>
-                    <td>9</td>
+                <tr class="tr1">
+                    <td class="td1">25</td>
+                    <td class="motoGP td1">94 J. Folger</td>
+                    <td class="td1">GASGAS Factory Racing Tech3</td>
+                    <td class="td1">9</td>
                 </tr>
 
-                <tr>
-                    <td>26</td>
-                    <td class="motoGP">6 S. Bradl</td>
-                    <td>LCR Honda CASTROL</td>
-                    <td>8</td>
+                <tr class="td1">
+                    <td class="td1">26</td>
+                    <td class="motoGP td1">6 S. Bradl</td>
+                    <td class="td1">LCR Honda CASTROL</td>
+                    <td class="td1">8</td>
                 </tr>
 
-                <tr>
-                    <td>27</td>
-                    <td class="motoGP">51 M. Pirro</td>
-                    <td>Ducati Lenovo Team</td>
-                    <td>5</td>
+                <tr class="tr1">
+                    <td class="td1">27</td>
+                    <td class="motoGP td1">51 M. Pirro</td>
+                    <td class="td1">Ducati Lenovo Team</td>
+                    <td class="td1">5</td>
                 </tr>
 
-                <tr>
-                    <td>28</td>
-                    <td class="motoGP">9 D. Petrucci</td>
-                    <td>Ducati Lenovo Team</td>
-                    <td>5</td>
+                <tr class="tr1">
+                    <td class="td1">28</td>
+                    <td class="motoGP td1">9 D. Petrucci</td>
+                    <td class="td1">Ducati Lenovo Team</td>
+                    <td class="td1">5</td>
                 </tr>
 
-                <tr>
-                    <td>29</td>
-                    <td class="motoGP">35 C. Crutchlow</td>
-                    <td>Yamalube RS4GP Racing Team</td>
-                    <td>3</td>
+                <tr class="tr1">
+                    <td class="td1">29</td>
+                    <td class="motoGP td1">35 C. Crutchlow</td>
+                    <td class="td1">Yamalube RS4GP Racing Team</td>
+                    <td class="td1">3</td>
                 </tr>
 
-                <tr>
-                    <td>30</td>
-                    <td class="motoGP">27 I. Lecuona</td>
-                    <td>LCR Honda CASTROL</td>
-                    <td>0</td>
+                <tr class="tr1">
+                    <td class="td1">30</td>
+                    <td class="motoGP td1">27 I. Lecuona</td>
+                    <td class="td1">LCR Honda CASTROL</td>
+                    <td class="td1">0</td>
                 </tr>
 
             </tbody>

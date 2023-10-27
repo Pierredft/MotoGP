@@ -23,6 +23,25 @@ nav{
     margin-right: 3%;
 }
 
+
+.th2{
+    border-bottom: black 1px solid;
+    padding: 2%;
+}
+
+.td2{
+    text-align: center;
+    border-bottom: black 1px solid;
+    padding: 2%;
+}
+
+.table2{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
 .circuitTable{
     margin-left: 25%;
     margin-top: 2%;
@@ -67,12 +86,18 @@ width: 50%;
     text-align: center;
 }
 
-.table, td, th, tr{
+.table1, .td1, .th1, .tr1{
     border: solid 1px black;
     text-align: center;
 }
 
-td, th{
+.table2{
+    border: none;
+}
+
+
+
+.td1, .th1{
     padding: 1% 2%;
 }
 
@@ -93,11 +118,37 @@ td, th{
     color: #fff;
 }
 
-.table{
+.table1{
     border-collapse: collapse;
     display: none;
 }
 
 .test{
     display: block;
+}
+
+.flexSujet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnSujet{
+    width: 8%;
+    margin-left: 25%;
+    margin-top: 0.5%;
+    text-align: center;
+
+}
+
+.textZone{
+    width: 50%;
+    padding: 10px;
+    margin-left:25%;
+    margin-top: 2%;
+}
+
+.flexAjout{
+    display: flex;
+    flex-direction: column;
 }
