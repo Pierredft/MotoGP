@@ -11,10 +11,22 @@ document.getElementById("add-button").addEventListener("click", function() {
         cell1.innerHTML = rowCount + 1;
         cell2.innerHTML = `<a href="../CommentairePilote/commentairePilote.html">${topicInput}</a>`;
         cell3.innerHTML = "";
-        cell4.innerHTML = "";
+        cell4.innerHTML = prenomRecup;
+
+        // Retrieve the existing topics from local storage
+        let topics = JSON.parse(localStorage.getItem('topics')) || [];
+
+        // Add the new topic to the array
+        topics.push(topicInput);
+
+        // Store the updated array in local storage
+        localStorage.setItem('topics', JSON.stringify(topics));
+
         document.getElementById("topic-input").value = "";
     }
-  });
+});
+
+
 
 let btnAjoutSujet = document.getElementById("add-topic");
 let btnAjouter = document.getElementById("add-button")
@@ -30,3 +42,7 @@ function clickClose(){
 
 btnAjoutSujet.addEventListener("click", clickOpen);
 btnAjouter.addEventListener("click", clickClose);
+
+let prenomRecup = localStorage.getItem('prenom'); // recupération dans le localStorage
+
+ // envoie du sujet dans le localStorage
