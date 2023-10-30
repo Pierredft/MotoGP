@@ -41,36 +41,36 @@ nav {
 }
 
 .pilotes {
-    width: 18%;
+    width: 40%;
     text-align: center;
     background-image: url(../Accueil/Img/ValeRossi.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding-bottom: 1%;
+    padding-bottom: 10%;
 }
 
 .ecuries {
-    width: 18%;
+    width: 40%;
     text-align: center;
     background-image: url(../Accueil/Img/GASGAS.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
 }
 
 .circuits {
-    width: 18%;
+    width: 40%;
     text-align: center;
     background-image: url(../Accueil/Img/Cicuit.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
 }
 
 .stroke {
@@ -109,7 +109,9 @@ nav {
 .categories {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
 }
 
 .bienvenue{
@@ -133,6 +135,13 @@ nav {
     gap: 10px;
 }
 
+.pito{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
 
 @media only screen and (max-width:829px){
     .bienvenue{
@@ -155,20 +164,75 @@ nav {
     .categories{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
     }
 
-    .cateResp{
+    .pito{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        margin-bottom: 5%;
+        width: 80%;
+    }
+
+    .pilotes{
+        width: 60%;
+    }
+
+    .ecuries{
+        width: 60%;
+    }
+
+    .circuits{
+        width: 40%;
+    }
+    .site {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-top: 15%;
     }
 }
 
-@media only screen and (max-width:1040px){
-    .h2Resp{
-        font-size: 3.5vh;
+@media only screen and (max-width: 600px) {
+    .categories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .pResp{
-        font-size: 2.5vh;
+    .pito{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pilotes{
+        width: 60%;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .ecuries{
+        width: 60%;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .circuits{
+        width: 50%;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+
+    .site {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-top: 20%;
     }
 }

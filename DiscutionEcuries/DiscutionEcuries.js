@@ -10,19 +10,11 @@ document.getElementById("add-button").addEventListener("click", function() {
         const cell4 = newRow.insertCell(3);
         cell1.innerHTML = rowCount + 1;
         cell2.innerHTML = `<a href="../CommentaireEcuries/commentaireEcuries.html">${topicInput}</a>`;
-        cell3.innerHTML = "";
+        cell3.innerHTML = dateCom;
         cell4.innerHTML = prenomRecup;
 
-        // Retrieve the existing topics from local storage
-        let topics = JSON.parse(localStorage.getItem('topics')) || [];
-
-        // Add the new topic to the array
-        topics.push(topicInput);
-
-        // Store the updated array in local storage
-        localStorage.setItem('topics', JSON.stringify(topics));
-
-        document.getElementById("topic-input").value = "";
+        // Recupération des donnéer de la cellule "sujet" et envoie dans le local storage
+        localStorage.setItem("cell2Data", topicInput);
     }
 });
 
@@ -44,5 +36,6 @@ btnAjoutSujet.addEventListener("click", clickOpen);
 btnAjouter.addEventListener("click", clickClose);
 
 let prenomRecup = localStorage.getItem('prenom'); // recupération dans le localStorage
+let dateCom = localStorage.setItem("dateDernierCommentaire", formatDate(date));
 
  // envoie du sujet dans le localStorage
