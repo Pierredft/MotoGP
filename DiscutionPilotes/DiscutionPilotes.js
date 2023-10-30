@@ -9,7 +9,7 @@ document.getElementById("add-button").addEventListener("click", function() {
         const cell3 = newRow.insertCell(2);
         const cell4 = newRow.insertCell(3);
         cell1.innerHTML = rowCount + 1;
-        cell2.innerHTML = `<a href="../opening.html">${topicInput}</a>`;
+        cell2.innerHTML = `<a href="../CommentairePilote/commentairePilote.html">${topicInput}</a>`;
         cell3.innerHTML = "";
         cell4.innerHTML = "";
         document.getElementById("topic-input").value = "";
