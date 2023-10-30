@@ -1,154 +1,174 @@
-*{
-    margin: 0;
-}
-
-nav{
+/* button retour à l'acceuil */
+nav {
     margin-top: 1%;
-    margin-right: 2%;
     display: flex;
     justify-content: end;
+    margin-bottom: 2%;
 }
 
-.btn{
+.btnRetourAccueil {
     text-decoration: none;
     border: none;
     border-radius: 10px;
     padding: 15px;
-}
-
-.size{
-    font-size: 1.5em;
-}
-.mr{
+    font-size: 1em;
     margin-right: 3%;
-}
-
-
-.th2{
-    border-bottom: black 1px solid;
-    padding: 2%;
-}
-
-.td2{
-    text-align: center;
-    border-bottom: black 1px solid;
-    padding: 2%;
-}
-
-.table2{
-    border-collapse: collapse;
-    width: 50%;
-    margin-left: 25%;
-}
-
-
-.circuitTable{
-    margin-left: 25%;
-    margin-top: 2%;
-}
-
-.block{
-    display: block;
-}
-
-.btn1{
-    background: none;
+    background-color: #B7271A;
+    margin: 0;
     color: #fff;
-    border: none;
-    display: flex;
-    align-items: center;
+}
+/* button retour à l'acceuil */
+
+/* Tableau ajout de sujet */
+.table1 {
+    border-collapse: collapse;
+    width: 75%;
+    margin-bottom: 2%;
 }
 
-.flex{
+.table1,
+.th1,
+.td1 {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.th1,
+.td1{
+    padding: 8px;
+}
+
+/* Tableau ajout de sujet */
+
+/* disposition des buttons et de l'emplacement ajout sujet */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex2 {
+    display: flex;
     flex-direction: row;
-    display: flex;
+    gap: 1%;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
-.bgColor{
-background-color: #B7271A;
-margin: 0;
-}
-
-.color{
-    color: #fff;
-}
-
-.radius{
-    border-radius: 10px 10px 0px 0px;
-}
-
-.circuitTable{
-width: 50%;
-}
-
-.flex{
-    text-align: center;
-}
-
-.table1, .td1, .th1, .tr1{
-    border: solid 1px black;
-    text-align: center;
-}
-
-.table2{
+.btnAjouterUnSujet {
+    width: 10%;
+    background-color: #B7271A;
     border: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-bottom: 1%;
+    color: white;
+    margin-left: 13%;
 }
 
-
-
-.td1, .th1{
-    padding: 1% 2%;
+.zoneText{
+    width: 60%;
 }
 
-.space{
-    width: 20%;
+.btnAjouter{
+    background-color: #B7271A;
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    padding: 10px;
+}
+/* disposition des buttons et de l'emplacement ajout sujet */
+
+/* cache de la zone ajouter */
+.zoneAjouter{
+    display: none;
+}
+/* cache de la zone ajouter */
+
+/* afficher zone ajouter apres click button ajouter sujet */
+.zoneAjouterAfficher{
+    display: block;
+    margin-left: 25%;
+
+}
+/* afficher zone ajouter apres click button ajouter sujet */
+
+/* classement pilote */
+
+/* classement pilote */
+/* tête du tableau classement */
+.btnClassement {
+    background: none;
+    border: none;
+    color: white;
 }
 
-.space1{
-    width: 5%;
+.buttonClassement {
+    display: flex;
+    flex-direction: row;
+    background-color: #B7271A;
+    border: solid #B7271A;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    width: 74.5%;
+    padding: 1px;
+    gap: 10px;
+    justify-content: center;
+    font-size: 3vh;
 }
+/* tête du tableau classement */
 
-.img1{
-    width: 40%;
-}
-
-.first{
-    background: linear-gradient(to right,black, red);
-    color: #fff;
-}
-
-.table1{
+/* Tableau classement pilote */
+.table2 {
     border-collapse: collapse;
+    width: 75%;
+    margin-bottom: 2%;
+}
+
+.cacheTableau{
     display: none;
 }
 
-.test{
+.table2,
+.th2,
+.td2 {
+    border: 1px solid black;
+}
+
+.th2,
+.td2 {
+    padding: 8px;
+    text-align: center;
+}
+
+.champion {
+    background: linear-gradient(to left, #B7271A, black);
+    color: white;
+}
+/* Tableau classement pilote */
+
+/* afficher le tableau classement */
+.afficheTableau{
     display: block;
 }
-
-.flexSujet{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* media query  */
+@media only screen and (max-width:1000px) {
+    .btnAjouterUnSujet {
+        width: 20%;
+    }
 }
 
-.btnSujet{
-    width: 8%;
-    margin-left: 25%;
-    margin-top: 0.5%;
-    text-align: center;
-
+@media only screen and (max-width:768px) {
+    .btnAjouterUnSujet {
+        width: 20%;
+    }
 }
 
-.textZone{
-    width: 50%;
-    padding: 10px;
-    margin-left:25%;
-    margin-top: 2%;
-}
-
-.flexAjout{
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width:600px) {
+    .btnAjouterUnSujet {
+        width: 20%;
+    }
+    /* tableau classement */
+    .cacheMediaQuery{
+        display: none;
+    }
 }
