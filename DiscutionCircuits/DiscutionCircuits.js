@@ -5,15 +5,16 @@ document.getElementById("add-button").addEventListener("click", function() {
         const rowCount = tableBody.getElementsByTagName("tr").length;
         const newRow = tableBody.insertRow(rowCount);
         const cell1 = newRow.insertCell(0);
-        const cell2 = newRow.insertCell(1);
+        const newCell = newRow.insertCell(1);
         const cell3 = newRow.insertCell(2);
         const cell4 = newRow.insertCell(3);
+        const currentDate = getCurrentDate()
         cell1.innerHTML = rowCount + 1;
-        cell2.innerHTML = `<a href="../CommentaireCircuit/commentaireCircuit.html">${topicInput}</a>`;
-        cell3.innerHTML = dateCom;
+        newCell.innerHTML = `<a href="../CommentaireCircuit/commentaireCircuit.html">${topicInput}</a>`;
+        cell3.innerHTML = currentDate;
         cell4.innerHTML = prenomRecup;
 
-        // Recupération des donnéer de la cellule "sujet" et envoie dans le local storage
+        // envoie des donnéer de la cellule "sujet" et envoie dans le local storage
         localStorage.setItem("cell2Data", topicInput);
     }
 });
@@ -32,10 +33,19 @@ function clickClose(){
     nouveauSujet.classList.remove("zoneAjouterAfficher");
 }
 
+function getCurrentDate() {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
+
+    return `${dd}/${mm}/${yyyy}`;
+}
+
 btnAjoutSujet.addEventListener("click", clickOpen);
 btnAjouter.addEventListener("click", clickClose);
 
 let prenomRecup = localStorage.getItem('prenom'); // recupération dans le localStorage
-let dateCom = localStorage.setItem("dateDernierCommentaire", formatDate(date));
 
  // envoie du sujet dans le localStorage
+ 

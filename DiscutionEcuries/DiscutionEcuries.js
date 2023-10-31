@@ -8,9 +8,10 @@ document.getElementById("add-button").addEventListener("click", function() {
         const cell2 = newRow.insertCell(1);
         const cell3 = newRow.insertCell(2);
         const cell4 = newRow.insertCell(3);
+        const currentDate = getCurrentDate()
         cell1.innerHTML = rowCount + 1;
         cell2.innerHTML = `<a href="../CommentaireEcuries/commentaireEcuries.html">${topicInput}</a>`;
-        cell3.innerHTML = dateCom;
+        cell3.innerHTML = currentDate;
         cell4.innerHTML = prenomRecup;
 
         // Recupération des donnéer de la cellule "sujet" et envoie dans le local storage
@@ -30,6 +31,15 @@ function clickOpen(){
 
 function clickClose(){
     nouveauSujet.classList.remove("zoneAjouterAfficher");
+}
+
+function getCurrentDate() {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
+
+    return `${dd}/${mm}/${yyyy}`;
 }
 
 btnAjoutSujet.addEventListener("click", clickOpen);
